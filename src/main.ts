@@ -12,7 +12,7 @@ let history: RouterHistory | null = null;
 let router: Router | null = null;
 
 function render() {
-  history = createWebHashHistory();
+  history = createWebHashHistory()
   router = getRouter(history);
   app = createApp(mainApp);
   app.use(router);
