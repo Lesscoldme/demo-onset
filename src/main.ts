@@ -14,7 +14,7 @@ let router: Router | null = null;
 function render() {
   history = createWebHashHistory();
   router = getRouter(history);
-  app = createApp(mainApp)
+  app = createApp(mainApp);
   app.use(router);
   app.use(ElementPlus, { locale: zhcn });
   app.use(store);

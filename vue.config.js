@@ -1,3 +1,4 @@
+
 const path = require('path')
 const AutoImport = require('unplugin-auto-import/webpack')
 const Components = require('unplugin-vue-components/webpack')
@@ -9,12 +10,12 @@ module.exports = {
     port: 80,
     headers: {
       'Access-Control-Allow-Origin': '*',
-    },
+    }
   },
-  configureWebpack:{
-    resolve:{
-      alias:{
-        "@":path.resolve(__dirname, "./src"),
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
       }
     },
     plugins: [
